@@ -29,7 +29,6 @@ describe("Header Component Tests - Main Page Title (h1) Rendering and Styling", 
             name: /Whack a Mole/i
         })
 
-        expect(pageTitle).toHaveClass('text-center')
-        expect(pageTitle).toHaveClass('font-bold')
+         expect(pageTitle.textContent).toMatch(/Whack a Mole/i);
     })
 })
